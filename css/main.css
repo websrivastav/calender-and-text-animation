@@ -103,7 +103,7 @@ body{
     width: 600px;
     margin: 0 auto;
 }
-.text-animationbox h4{
+#text-change{
     font-family: Bebas Neue;
     font-size: 56px;
     letter-spacing: 2px;
@@ -112,7 +112,7 @@ body{
     text-transform: uppercase;
     line-height: 90px;
 }
-#text-change::before{
+.text-animationbox h4 span::before{
     content:"Lifestyle";
     display: block;
     background-color: rgb(32, 182, 32);
