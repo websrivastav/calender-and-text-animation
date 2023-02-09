@@ -1,0 +1,135 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    scroll-behavior: smooth;
+}
+/****************** Calender CSS *********************/
+.calender{
+    padding: 20px 10px;
+    border:2px solid #000;
+    margin: 0 auto 50px auto;
+    width: 600px;
+    background-image:url(../img/bg.jpg);
+    background-position: top;
+    background-size: cover;
+}
+.calender h1{
+    font-family: Bebas Neue;
+    font-size: 46px;
+    margin-bottom: 30px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 10px 0;
+    border-bottom: 2px dashed;
+}
+.calender-grid{
+    display: grid;
+    grid-template-columns: repeat(7, 82px);
+    text-align: center;
+}
+.grid-items-head{
+    grid-column: 1/7;
+}
+.calender ul{
+    display: flex;
+    margin-bottom: 15px;
+}
+.calender ul li{
+    padding: 8px 10px;
+    list-style: none;
+    font-size: 24px;
+    font-family: Bebas Neue;
+    flex-basis: 82px;
+    text-align: center;
+}
+.bg1{
+    background-color: #81E8E53d;
+}
+.bg2{
+    background-color: #FFCD883d;
+}
+.bg3{
+    background-color: #B7E5A53d;
+}
+.bg4{
+    background-color: #FFF4903d;
+}
+.bg5{
+    background-color: #F980893d;
+}
+.bg6{
+    background-color: #C193B83d;
+}
+.bg7{
+    background-color: #A8B7E03d;
+}
+.grid-items-0{
+    grid-column: 1/3;
+}
+.grid-items{
+    padding: 10px;
+    font-family: Bebas Neue;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.grid-items:hover{
+    transition: 0.5s;
+    background-color: #96ffc5;
+}
+.parts{
+    display: flex;
+}
+.part1{
+    border-right: 2px solid #000;
+}
+.part1, .part2{
+    width: 50%;
+}
+.part1 h2, .part2 h2{
+    font-size: 40px;
+    text-align: center;
+    margin: 20px 0;
+    font-family: Bebas Neue;
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+.text-animationbox{
+    border:2px solid #000;
+    padding: 25px;
+    width: 600px;
+    margin: 0 auto;
+}
+.text-animationbox h4{
+    font-family: Bebas Neue;
+    font-size: 56px;
+    letter-spacing: 2px;
+    text-align: center;
+    color: #7b7b7b;
+    text-transform: uppercase;
+    line-height: 90px;
+}
+.text-animationbox h4 span::before{
+    content:"Lifestyle";
+    display: block;
+    background-color: rgb(32, 182, 32);
+    animation: change-text 6s forwards infinite;
+    color: #fff;
+}
+@keyframes change-text{
+    0%{
+        content:"Lifestyle";
+    background-color: rgb(32, 182, 32);
+    }
+    50%{
+        content:"Work";
+    background-color: rgb(14, 82, 255);
+    }
+    75%{
+        content:"Everything";
+    background-color: rgb(245, 18, 18);
+    }
+}
